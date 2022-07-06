@@ -9,9 +9,9 @@ public class HMC_db_Stepdefinitions {
     String url="jdbc:sqlserver://184.168.194.58:1433;databaseName=hotelmycamp ; user=techproed;password=P2s@rt65";
     String username="techproed";
     String password="P2s@rt65";
-    Connection connection;
-    Statement statement;
-    ResultSet resultSet;
+    Connection connection; // ne işe yarar? Database'e bağlanmamızı sağlar.
+    Statement statement; //  Query çalıştımamızı saglar.
+    ResultSet resultSet; // Query sonunda donen sonucu store etmemize yarar
 
     @Given("kullanici HMC veri tabanina baglanir")
     public void kullanici_hmc_veri_tabanina_baglanir() throws SQLException {
